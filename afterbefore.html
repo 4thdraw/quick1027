@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul>li:nth-child(1):before {
+            content: "1";
+        }
+
+        ul>li:nth-child(2):before {
+            content: "2";
+        }
+
+        ul>li:nth-child(3):before {
+            content: "3";
+        }
+
+        ul {
+            font-size: 5rem;
+            position: fixed;
+        }
+
+        /* ul {            
+            right: 50%;
+            bottom: 50%;
+            transform: translate(-50%, -50%);
+        } */
+        /* ul {
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: yellow;
+        } */
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+            width: 50vw;
+            height: 5rem;
+            font-size: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: yellow;
+        }
+
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 화면 정가운데로.. 단 position:fixed를 반드시 쓸것 -->
+    <ul id="thumb">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+
+</html>
